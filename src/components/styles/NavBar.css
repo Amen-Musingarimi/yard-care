@@ -1,0 +1,49 @@
+header {
+  padding: 14px 20px;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.companyName {
+  color: #097969;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.nav-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 40px;
+  font-weight: 500;
+}
+
+nav > a {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #097969;
+  cursor: pointer;
+}
+
+.nav-links > a:hover {
+  color: #2aaa8a;
+}
+
+.active {
+  color: #50c878 !important;
+  text-decoration: underline !important;
+}
