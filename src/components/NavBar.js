@@ -12,7 +12,7 @@ const NavBar = () => {
 
   return (
     <header>
-      <h3>YCC</h3>
+      <h3>Yard Care</h3>
       <nav ref={navRef}>
         <NavLink to="/" exact="true" activeclassname="active">
           Home
