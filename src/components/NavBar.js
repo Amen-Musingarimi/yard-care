@@ -1,29 +1,38 @@
+import { useRef } from 'react';
 import { NavLink } from 'react-router-dom';
-import '../components/styles/NavBar.css';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import '../components/styles/main.css';
 
 const NavBar = () => {
+  const navRef = useRef();
+
+  const showNavBar = () => {
+    navRef.current.classList.toggle('responsive_nav');
+  };
+
   return (
     <header>
-      <nav className="nav-container">
-        <h1 className="companyName">Yard Care Cleaners</h1>
-        <div className="nav-links">
-          <NavLink to="/" exact="true" activeclassname="active">
-            Services
-          </NavLink>
-          <NavLink to="/pricing" activeclassname="active">
-            Pricing
-          </NavLink>
-          <NavLink to="/getAquote" activeclassname="active">
-            Get a Quote
-          </NavLink>
-          <NavLink to="/becomeAmember" activeclassname="active">
-            Become A Member
-          </NavLink>
-          <NavLink to="/contactUs" activeclassname="active">
-            Contact Us
-          </NavLink>
-        </div>
+      <h3>YCC</h3>
+      <nav ref={navRef}>
+        <NavLink to="/" exact="true" activeclassname="active">
+          Home
+        </NavLink>
+        <NavLink to="/about" exact="true" activeclassname="active">
+          About Us
+        </NavLink>
+        <NavLink to="/services" exact="true" activeclassname="active">
+          Services
+        </NavLink>
+        <NavLink to="/contact" exact="true" activeclassname="active">
+          Get A Quote
+        </NavLink>
+        <button className="nav-btn nav-close-btn" onClick={showNavBar}>
+          <FaTimes />
+        </button>
       </nav>
+      <button className="nav-btn" onClick={showNavBar}>
+        <FaBars />
+      </button>
     </header>
   );
 };
