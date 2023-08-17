@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import formImage from '../../images/form 1.webp';
+import yardCleaningServices from '../../helpers/services';
 import '../../styles/Forms.css';
 
 const StepOne = ({ formData, nextStep, handleChange }) => {
@@ -41,13 +42,9 @@ const StepOne = ({ formData, nextStep, handleChange }) => {
           required
         >
           <option value="">Select a service</option>
-          <option value="Lawn Mowing and Maintenance">
-            Lawn Mowing and Maintenance
-          </option>
-          <option value="Leaf and Debris Removal">
-            Leaf and Debris Removal
-          </option>
-          <option value="Garden Care">Garden Care</option>
+          {yardCleaningServices.map((service) => (
+            <option value={service.name}>{service.name}</option>
+          ))}
         </select>
         {errorMessage && <p className="error-message">{errorMessage}</p>}
         <button onClick={handleNext} className="submit-btn step1-btn">

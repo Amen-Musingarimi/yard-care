@@ -36,12 +36,12 @@ const StepThree = ({ formData, nextStep, prevStep, handleChange }) => {
           placeholder="Full Name"
         />
         <input
-          type="tel"
+          type="number"
           value={phoneNumber}
           required
           className="step-input"
           onChange={(e) => handleChange('phoneNumber', e.target.value)}
-          placeholder="Phone Number"
+          placeholder="00263774001001"
         />
         <input
           type="email"

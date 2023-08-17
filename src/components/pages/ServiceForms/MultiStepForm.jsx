@@ -31,7 +31,6 @@ const MultiStepForm = () => {
 
   const handleSubmit = () => {
     const {
-      address,
       service,
       date,
       time,
@@ -40,7 +39,23 @@ const MultiStepForm = () => {
       email,
       description,
     } = formData;
-    const message = `Address: ${address}\nService: ${service}\nDate: ${date}\nTime: ${time}\nName: ${name}\nPhone: ${phoneNumber}\nEmail: ${email}\nDescription: ${description}`;
+
+    const formattedDate = new Date(date).toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+    });
+
+    const formattedTime = new Date(`2000-01-01T${time}`).toLocaleTimeString(
+      'en-US',
+      {
+        hour: 'numeric',
+        minute: 'numeric',
+      }
+    );
+
+    const message = `Hi Yard Care, this is ${name}. I need the ${service} service on ${formattedDate} at ${formattedTime}. My contact number is ${phoneNumber} and email is ${email}. Description: ${description}`;
+
     const encodedMessage = encodeURIComponent(message);
     const whatsappNumber = '+263712539755';
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
