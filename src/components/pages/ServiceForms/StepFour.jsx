@@ -2,8 +2,12 @@ import React from 'react';
 import formImage from '../../images/form 1.webp';
 import '../../styles/Forms.css';
 
-const StepFour = ({ formData, prevStep, handleSubmit }) => {
+const StepFour = ({ formData, prevStep, handleChange, handleSubmit }) => {
   const { description } = formData;
+
+  const handleDescriptionChange = (value) => {
+    handleChange('description', value);
+  };
 
   return (
     <div className="step-div">
@@ -17,7 +21,7 @@ const StepFour = ({ formData, prevStep, handleSubmit }) => {
         <textarea
           value={description}
           className="step-input"
-          onChange={(e) => handleSubmit('description', e.target.value)}
+          onChange={(e) => handleDescriptionChange(e.target.value)}
           placeholder="Enter any additional details..."
         />
         <div className="btn-container">

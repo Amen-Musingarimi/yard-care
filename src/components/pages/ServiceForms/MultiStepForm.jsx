@@ -81,6 +81,7 @@ const MultiStepForm = () => {
         <StepFour
           formData={formData}
           prevStep={prevStep}
+          handleChange={handleChange}
           handleSubmit={handleSubmit}
         />
       )}
