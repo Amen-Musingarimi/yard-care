@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/About.css';
 
 const About = () => {
+  const companyName = 'Yard Care';
   return (
     <div className="about-container">
       <h3 className="about-page-heading">About Us</h3>
@@ -9,7 +10,7 @@ const About = () => {
         <h4 className="about-section-heading">Our Inception</h4>
         <p className="about-section-description">
           Founded in the year 2023,{' '}
-          <span className="company-name">Yard Cleaners</span> emerged with a
+          <span className="company-name">{companyName}</span> emerged with a
           novel vision to redefine outdoor space care and maintenance. Our
           journey began with a team of dedicated individuals, passionate about
           curating cleaner, healthier, and more inviting yards for every
@@ -18,7 +19,7 @@ const About = () => {
         <p className="about-section-description">
           With a fresh perspective and unwavering determination, we're poised to
           make a lasting impact on the way outdoor spaces are perceived and
-          cherished. <span className="company-name">Yard Cleaners</span> stands
+          cherished. <span className="company-name">{companyName}</span> stands
           as a testament to our belief that even the smallest actions can lead
           to remarkable transformations.
         </p>
@@ -33,7 +34,7 @@ const About = () => {
         </p>
         <p className="about-section-description">
           Since our establishment,{' '}
-          <span className="company-name">Yard Cleaners</span> has already begun
+          <span className="company-name">{companyName}</span> has already begun
           weaving a network of satisfied customers and a reputation for
           delivering beyond expectations. We look forward to each opportunity to
           showcase our dedication to revitalizing outdoor spaces and to
@@ -48,7 +49,7 @@ const About = () => {
       <div className="inception-container">
         <h4 className="about-section-heading">Our Expertise in Early Stages</h4>
         <p className="about-section-description">
-          <span className="company-name">Yard Cleaners</span> is quickly
+          <span className="company-name">{companyName}</span> is quickly
           becoming a frontrunner in yard cleaning solutions. Our initial
           portfolio is a testament to our dedication to transforming ordinary
           outdoor spaces into remarkable landscapes. Our promise remains clear:
@@ -74,7 +75,7 @@ const About = () => {
       <div className="inception-container">
         <h4 className="about-section-heading">Dedication to Quality</h4>
         <p className="about-section-description">
-          <span className="company-name">Yard Cleaners</span> is not just a yard
+          <span className="company-name">{companyName}</span> is not just a yard
           cleaning service; it's a commitment to fostering positive change.
           While we're in the early stages of growth, our focus on quality is
           unyielding. Our commitment is rooted in a strict quality policy
@@ -82,7 +83,7 @@ const About = () => {
         </p>
         <p className="about-section-description">
           Aligned with industry regulations and customer expectations,{' '}
-          <span className="company-name">Yard Cleaners</span>s is dedicated to
+          <span className="company-name">{companyName}</span> is dedicated to
           delivering yard cleaning services that reflect our core values and
           dedication to creating a greener, cleaner world.
         </p>
@@ -91,8 +92,8 @@ const About = () => {
       <div className="inception-container">
         <h4 className="about-section-heading">Our Objectives</h4>
         <p className="about-section-description">
-          At <span className="company-name">Yard Cleaners</span>, our initial
-          objectives include:
+          At <span className="company-name">{companyName}</span>, our objectives
+          include:
         </p>
         <ul>
           <li className="about-section-description">

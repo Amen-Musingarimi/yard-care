@@ -9,7 +9,7 @@ const Home = () => {
         <div className="home-text">
           <p className="name-text">Your Trusted Yard Cleaning Partner</p>
           <p className="home-description">
-            We are <span className="company-name">Yard Cleaners</span>, your
+            We are <span className="company-name">Yard Care</span>, your
             dedicated yard cleaning experts. With a commitment to maintaining
             clean, beautiful outdoor spaces, we take pride in transforming your
             yards into vibrant havens. From meticulous lawn care to eco-friendly
