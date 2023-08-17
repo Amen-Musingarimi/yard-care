@@ -1,5 +1,4 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import formImage from '../../images/form 1.webp';
 import '../../styles/Forms.css';
 
@@ -12,8 +11,16 @@ const StepTwo = ({ formData, nextStep, prevStep, handleChange }) => {
       setErrorMessage(
         'Please fill in both the date and time fields before proceeding.'
       );
+    } else {
+      const selectedDateTime = new Date(`${date}T${time}`);
+      const currentDateTime = new Date();
+
+      if (selectedDateTime <= currentDateTime) {
+        setErrorMessage('Please select a date and time in the future.');
+      } else {
+        nextStep();
+      }
     }
-    nextStep();
   };
 
   return (
