@@ -28,12 +28,14 @@ const StepTwo = ({ formData, nextStep, prevStep, handleChange }) => {
         <input
           type="date"
           value={date}
+          required
           className="step-input"
           onChange={(e) => handleChange('date', e.target.value)}
         />
         <input
           type="time"
           value={time}
+          required
           className="step-input"
           onChange={(e) => handleChange('time', e.target.value)}
         />

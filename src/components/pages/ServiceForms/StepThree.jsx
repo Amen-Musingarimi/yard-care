@@ -30,6 +30,7 @@ const StepThree = ({ formData, nextStep, prevStep, handleChange }) => {
         <input
           type="text"
           value={name}
+          required
           className="step-input"
           onChange={(e) => handleChange('name', e.target.value)}
           placeholder="Full Name"
@@ -37,6 +38,7 @@ const StepThree = ({ formData, nextStep, prevStep, handleChange }) => {
         <input
           type="tel"
           value={phoneNumber}
+          required
           className="step-input"
           onChange={(e) => handleChange('phoneNumber', e.target.value)}
           placeholder="Phone Number"
@@ -44,6 +46,7 @@ const StepThree = ({ formData, nextStep, prevStep, handleChange }) => {
         <input
           type="email"
           value={email}
+          required
           className="step-input"
           onChange={(e) => handleChange('email', e.target.value)}
           placeholder="Email"
