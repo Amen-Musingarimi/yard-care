@@ -1,0 +1,45 @@
+:root {
+  --mainColor: #fff;
+  --mainColorLight: #109c87;
+  --secondaryColor: #db2b39;
+  --textColor: #097969;
+}
+
+.about-container,
+.inception-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-container {
+  gap: 2rem;
+  padding: 2rem 4rem;
+}
+
+.about-page-heading {
+  text-align: center;
+  color: var(--textColor);
+  margin-top: 2rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.about-section-heading {
+  color: var(--mainColorLight);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.about-section-description {
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.dotted-border-container {
+  border: 1px dotted var(--textColor);
+  width: 20%;
+  margin-bottom: 1rem;
+}
