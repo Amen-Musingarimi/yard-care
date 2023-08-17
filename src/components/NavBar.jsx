@@ -23,8 +23,8 @@ const NavBar = () => {
         <NavLink to="/services" exact="true" activeclassname="active">
           Services
         </NavLink>
-        <NavLink to="/contact" exact="true" activeclassname="active">
-          Get A Quote
+        <NavLink to="/book" exact="true" activeclassname="active">
+          Book A Clean-Up
         </NavLink>
         <button className="nav-btn nav-close-btn" onClick={showNavBar}>
           <FaTimes />
