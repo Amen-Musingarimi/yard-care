@@ -1,5 +1,4 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import formImage from '../../images/form 1.webp';
 import yardCleaningServices from '../../helpers/services';
 import '../../styles/Forms.css';
@@ -7,9 +6,21 @@ import '../../styles/Forms.css';
 const StepOne = ({ formData, nextStep, handleChange }) => {
   const { address, service } = formData;
   const [errorMessage, setErrorMessage] = useState('');
+  const [addressValid, setAddressValid] = useState(false);
+
+  const validateAddress = (value) => {
+    const trimmedAddress = value.trim();
+    if (trimmedAddress.length >= 10) {
+      setAddressValid(true);
+      setErrorMessage('');
+    } else {
+      setAddressValid(false);
+      setErrorMessage('Address should have at least 10 characters.');
+    }
+  };
 
   const handleNext = () => {
-    if (!address || !service) {
+    if (!addressValid || !service) {
       setErrorMessage(
         'Please fill in both the address and service fields before proceeding.'
       );
@@ -30,8 +41,11 @@ const StepOne = ({ formData, nextStep, handleChange }) => {
         <input
           type="text"
           value={address}
-          onChange={(e) => handleChange('address', e.target.value)}
-          placeholder="Enter your address"
+          onChange={(e) => {
+            handleChange('address', e.target.value);
+            validateAddress(e.target.value);
+          }}
+          placeholder="Enter your address e.g 11 Down Street Wallview Harare"
           className="step-input"
           required
         />
@@ -43,7 +57,11 @@ const StepOne = ({ formData, nextStep, handleChange }) => {
         >
           <option value="">Select a service</option>
           {yardCleaningServices.map((service) => (
-            <option value={service.name} className="dropdown-option">
+            <option
+              key={service.name}
+              value={service.name}
+              className="dropdown-option"
+            >
               {service.name}
             </option>
           ))}
