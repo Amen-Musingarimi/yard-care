@@ -49,12 +49,6 @@ const StepOne = ({ formData, nextStep, handleChange }) => {
           </option>
           <option value="Garden Care">Garden Care</option>
         </select>
-        <input
-          type="file"
-          accept="image/*"
-          className="step-input-image"
-          onChange={(e) => handleChange('image', e.target.files[0])}
-        />
         {errorMessage && <p className="error-message">{errorMessage}</p>}
         <button onClick={handleNext} className="submit-btn step1-btn">
           PROCEED

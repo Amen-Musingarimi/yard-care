@@ -9,7 +9,6 @@ const MultiStepForm = () => {
   const [formData, setFormData] = useState({
     address: '',
     service: '',
-    image: null,
     date: '',
     time: '',
     name: '',
@@ -27,11 +26,7 @@ const MultiStepForm = () => {
   };
 
   const handleChange = (field, value) => {
-    if (field === 'image') {
-      setFormData({ ...formData, image: value });
-    } else {
-      setFormData({ ...formData, [field]: value });
-    }
+    setFormData({ ...formData, [field]: value });
   };
 
   const handleSubmit = () => {
