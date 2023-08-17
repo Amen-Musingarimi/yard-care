@@ -26,8 +26,16 @@ const MultiStepForm = () => {
     setStep(step - 1);
   };
 
+  // const handleChange = (field, value) => {
+  //   setFormData({ ...formData, [field]: value });
+  // };
+
   const handleChange = (field, value) => {
-    setFormData({ ...formData, [field]: value });
+    if (field === 'image') {
+      setFormData({ ...formData, image: value });
+    } else {
+      setFormData({ ...formData, [field]: value });
+    }
   };
 
   const handleSubmit = () => {

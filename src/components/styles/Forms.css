@@ -31,6 +31,76 @@
   margin-bottom: 1rem;
 }
 
+.step-input,
+.step-input-image {
+  width: 100%;
+  outline: none;
+  padding: 10px;
+  font-weight: 500;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+.step-input {
+  border: 1px solid var(--textColor);
+}
+
+.step-input-image {
+  border: 1px solid var(--mainColor);
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  width: 100%;
+  gap: 1rem;
+}
+.step1-btn {
+  width: 100% !important;
+}
+
+.submit-btn,
+.previous-btn {
+  padding: 10px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-btn {
+  width: 80%;
+  background-color: var(--textColor);
+  color: var(--mainColor);
+  border: 1px solid var(--textColor);
+}
+
+.submit-btn:hover {
+  background-color: var(--mainColorLight);
+  border: 2px solid var(--mainColorLight);
+}
+
+.previous-btn {
+  width: 20%;
+  background-color: var(--mainColor);
+  color: var(--textColor);
+  border: 1px solid var(--mainColorLight);
+}
+
+.previous-btn:hover {
+  color: var(--mainColorLight);
+  border: 2px solid var(--mainColorLight);
+}
+
+.error-message {
+  color: #bd1e1e;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
 .step-div img {
   width: 40%;
   height: 100%;

@@ -1,28 +1,53 @@
 import React from 'react';
+import { useState } from 'react';
+import formImage from '../../images/form 1.webp';
+import '../../styles/Forms.css';
 
 const StepTwo = ({ formData, nextStep, prevStep, handleChange }) => {
+  const [errorMessage, setErrorMessage] = useState('');
   const { date, time } = formData;
 
   const handleNext = () => {
-    // Perform validation if needed before proceeding to the next step
+    if (!date || !time) {
+      setErrorMessage(
+        'Please fill in both the date and time fields before proceeding.'
+      );
+    }
     nextStep();
   };
 
   return (
-    <div>
-      <h2>Step 2: Choose Date and Time</h2>
-      <input
-        type="date"
-        value={date}
-        onChange={(e) => handleChange('date', e.target.value)}
-      />
-      <input
-        type="time"
-        value={time}
-        onChange={(e) => handleChange('time', e.target.value)}
-      />
-      <button onClick={prevStep}>Previous</button>
-      <button onClick={handleNext}>Next</button>
+    <div className="step-div">
+      <div className="form-container">
+        <p className="step-description">
+          When would be the most suitable time for us to provide the service
+          you've selected? Please advise.
+        </p>
+        <div className="dotted-border-container"></div>
+        <span className="step-heading">Step 2 of 4</span>
+        <input
+          type="date"
+          value={date}
+          className="step-input"
+          onChange={(e) => handleChange('date', e.target.value)}
+        />
+        <input
+          type="time"
+          value={time}
+          className="step-input"
+          onChange={(e) => handleChange('time', e.target.value)}
+        />
+        {errorMessage && <p className="error-message">{errorMessage}</p>}
+        <div className="btn-container">
+          <button onClick={prevStep} className="previous-btn">
+            Previous
+          </button>
+          <button onClick={handleNext} className="submit-btn">
+            PROCEED
+          </button>
+        </div>
+      </div>
+      <img src={formImage} alt="FormImage" />
     </div>
   );
 };

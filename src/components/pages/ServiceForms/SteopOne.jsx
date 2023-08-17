@@ -31,11 +31,13 @@ const StepOne = ({ formData, nextStep, handleChange }) => {
           value={address}
           onChange={(e) => handleChange('address', e.target.value)}
           placeholder="Enter your address"
+          className="step-input"
           required
         />
         <select
           value={service}
           onChange={(e) => handleChange('service', e.target.value)}
+          className="step-input"
           required
         >
           <option value="">Select a service</option>
@@ -47,8 +49,16 @@ const StepOne = ({ formData, nextStep, handleChange }) => {
           </option>
           <option value="Garden Care">Garden Care</option>
         </select>
-        {errorMessage && <p style={{ color: 'red' }}>{errorMessage}</p>}
-        <button onClick={handleNext}>Proceed</button>
+        <input
+          type="file"
+          accept="image/*"
+          className="step-input-image"
+          onChange={(e) => handleChange('image', e.target.files[0])}
+        />
+        {errorMessage && <p className="error-message">{errorMessage}</p>}
+        <button onClick={handleNext} className="submit-btn step1-btn">
+          PROCEED
+        </button>
       </div>
 
       <img src={formImage} alt="FormImage" />
