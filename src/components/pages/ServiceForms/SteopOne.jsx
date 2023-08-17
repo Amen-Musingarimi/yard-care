@@ -43,7 +43,9 @@ const StepOne = ({ formData, nextStep, handleChange }) => {
         >
           <option value="">Select a service</option>
           {yardCleaningServices.map((service) => (
-            <option value={service.name}>{service.name}</option>
+            <option value={service.name} className="dropdown-option">
+              {service.name}
+            </option>
           ))}
         </select>
         {errorMessage && <p className="error-message">{errorMessage}</p>}
