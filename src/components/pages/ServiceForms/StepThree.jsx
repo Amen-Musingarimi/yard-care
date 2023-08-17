@@ -1,5 +1,4 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import formImage from '../../images/form 1.webp';
 import '../../styles/Forms.css';
 
@@ -10,10 +9,17 @@ const StepThree = ({ formData, nextStep, prevStep, handleChange }) => {
   const handleNext = () => {
     if (!name || !phoneNumber || !email) {
       setErrorMessage(
-        'Please fill in all the Name, PhoneNumber and Email fields before proceeding.'
+        'Please fill in all the Name, Phone Number, and Email fields before proceeding.'
       );
+    } else if (name.length < 5) {
+      setErrorMessage('Name must be at least 5 characters.');
+    } else if (phoneNumber.length < 10) {
+      setErrorMessage('Phone Number must have at least 10 digits.');
+    } else if (!email.includes('@')) {
+      setErrorMessage('Email must include "@" symbol.');
+    } else {
+      nextStep();
     }
-    nextStep();
   };
 
   return (
@@ -33,7 +39,7 @@ const StepThree = ({ formData, nextStep, prevStep, handleChange }) => {
           required
           className="step-input"
           onChange={(e) => handleChange('name', e.target.value)}
-          placeholder="Full Name"
+          placeholder="Full Name e.g John Doe"
         />
         <input
           type="number"
@@ -41,7 +47,7 @@ const StepThree = ({ formData, nextStep, prevStep, handleChange }) => {
           required
           className="step-input"
           onChange={(e) => handleChange('phoneNumber', e.target.value)}
-          placeholder="00263774001001"
+          placeholder="Phone Number e.g 00263774001001"
         />
         <input
           type="email"
@@ -49,7 +55,7 @@ const StepThree = ({ formData, nextStep, prevStep, handleChange }) => {
           required
           className="step-input"
           onChange={(e) => handleChange('email', e.target.value)}
-          placeholder="Email"
+          placeholder="Email e.g johndoe@email.com"
         />
         {errorMessage && <p className="error-message">{errorMessage}</p>}
         <div className="btn-container">
