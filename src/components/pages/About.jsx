@@ -5,7 +5,7 @@ const About = () => {
   const companyName = 'Yard Care';
   return (
     <div className="about-container">
-      <h3 className="about-page-heading">About Us</h3>
+      <h3 className="about-page-heading">Who We Are!</h3>
       <div className="inception-container">
         <h4 className="about-section-heading">Our Inception</h4>
         <p className="about-section-description">
