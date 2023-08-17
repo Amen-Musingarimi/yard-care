@@ -24,7 +24,7 @@ const NavBar = () => {
           Services
         </NavLink>
         <NavLink to="/book" exact="true" activeclassname="active">
-          Book A Clean-Up
+          Book A Service
         </NavLink>
         <button className="nav-btn nav-close-btn" onClick={showNavBar}>
           <FaTimes />
