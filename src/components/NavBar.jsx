@@ -14,16 +14,36 @@ const NavBar = () => {
     <header>
       <h3>Yard Care</h3>
       <nav ref={navRef}>
-        <NavLink to="/" exact="true" activeclassname="active">
+        <NavLink
+          to="/"
+          exact="true"
+          activeclassname="active"
+          onClick={showNavBar}
+        >
           Home
         </NavLink>
-        <NavLink to="/services" exact="true" activeclassname="active">
+        <NavLink
+          to="/services"
+          exact="true"
+          activeclassname="active"
+          onClick={showNavBar}
+        >
           Services
         </NavLink>
-        <NavLink to="/about" exact="true" activeclassname="active">
+        <NavLink
+          to="/about"
+          exact="true"
+          activeclassname="active"
+          onClick={showNavBar}
+        >
           About Us
         </NavLink>
-        <NavLink to="/book" exact="true" activeclassname="active">
+        <NavLink
+          to="/book"
+          exact="true"
+          activeclassname="active"
+          onClick={showNavBar}
+        >
           Book A Service
         </NavLink>
         <button className="nav-btn nav-close-btn" onClick={showNavBar}>
