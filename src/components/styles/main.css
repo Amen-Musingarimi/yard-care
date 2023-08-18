@@ -182,6 +182,11 @@ header .nav-btn {
     opacity: 1;
   }
 
+  header h3 {
+    left: 2rem;
+    font-size: 2rem;
+  }
+
   header nav {
     position: fixed;
     top: 0;
