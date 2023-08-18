@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ServiceItem = ({ name, description, image }) => {
   return (
@@ -6,6 +7,9 @@ const ServiceItem = ({ name, description, image }) => {
       <img src={image} alt="ServiceImage" className="service-image" />
       <h4 className="service-name">{name}</h4>
       <p className="service-description">{description}</p>
+      <Link to="/book" className="redirect-btn">
+        Book A Service
+      </Link>
     </div>
   );
 };

@@ -3,6 +3,8 @@
   flex-direction: column;
   gap: 2rem;
   padding: 2rem 4rem;
+  background-color: var(--mainColor);
+  opacity: 1;
 }
 
 .services-heading {
@@ -28,11 +30,26 @@
   padding: 1rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
   border-radius: 10px;
-  cursor: pointer;
 }
 
 .service-item-container:hover {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.service-item-container a {
+  text-decoration: none;
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: var(--textColor);
+  color: var(--mainColor);
+}
+
+.service-item-container a:hover {
+  background-color: var(--mainColorLight);
+  border: 1px solid var(--mainColorLight);
 }
 
 .service-image {
