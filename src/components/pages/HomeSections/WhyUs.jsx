@@ -18,11 +18,9 @@ const WhyUs = () => {
       <div className="reasons-container">
         {whyUsReasons.map((reason, index) => (
           <div key={index} className="reason">
-            <div className="icon">{reason.icon}</div>
-            <div className="reason-content">
-              <h3 className="reason-heading">{reason.heading}</h3>
-              <p className="reason-text">{reason.text}</p>
-            </div>
+            <img src={reason.icon} alt="ReasonIcon" className="reason-icon" />
+            <h4 className="reason-heading">{reason.heading}</h4>
+            <p className="reason-text">{reason.text}</p>
           </div>
         ))}
       </div>

@@ -29,3 +29,36 @@
   font-weight: 500;
   line-height: 1.5rem;
 }
+
+.reasons-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.reason {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.reason-icon {
+  height: 5rem;
+  width: 5rem;
+}
+
+.reason-heading {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #097969;
+}
+
+.reason-text {
+  color: #575555;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
