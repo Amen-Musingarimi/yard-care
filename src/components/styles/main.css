@@ -82,6 +82,7 @@ header .nav-btn {
 .home-div {
   display: flex;
   flex-direction: column;
+  gap: 1rem;
   background-color: var(--mainColor);
   opacity: 1;
   width: 100%;
