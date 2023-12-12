@@ -15,31 +15,31 @@ const whyUsReasons = [
   {
     heading: 'Tailored Solutions for Every Problem',
     text:
-      "Just as every blade of grass is unique, so is each yard. YardCare Pro crafts personalized solutions to suit the specific needs of your green oasis. Whether it's lush lawns, vibrant flower beds, or meticulous tree care, we've got you covered.",
+      'Just as every blade of grass is unique, so is each yard. YardCare crafts personalized solutions to suit the specific needs of your green oasis.',
     icon: tapmeasure,
   },
   {
     heading: 'Timely and Reliable Service',
     text:
-      "We understand the importance of a well-maintained yard. That's why YardCare Pro prides itself on prompt and reliable service. Your satisfaction is our priority, and we ensure your outdoor space looks impeccable, season after season.",
+      "We understand the importance of a well-maintained yard. That's why YardCare prides itself on prompt and reliable service. Your satisfaction is our priority, and we ensure your outdoor space looks impeccable, season after season.",
     icon: clockIcon,
   },
   {
-    heading: 'Cutting-Edge Technology for Optimal Results',
+    heading: 'Cutting-Edge Technology',
     text:
-      'Stay ahead in yard care innovation with YardCare Pro. We leverage cutting-edge technology to enhance our services, ensuring your lawn receives the best care possible. From precision mowing to eco-friendly pest control, we employ the latest tools to exceed your expectations.',
+      'We leverage cutting-edge technology to enhance our services, ensuring your yard receives the best care possible. We employ the latest tools to exceed your expectations.',
     icon: lawnMowerIcon,
   },
   {
     heading: 'Customer-Centric Approach',
     text:
-      'Your convenience matters to us. Our customer-centric approach means we work around your schedule. Need a one-time service or a recurring maintenance plan? YardCare Pro adapts to your needs with flexibility and efficiency.',
+      'Your convenience matters to us. Our customer-centric approach means we work around your schedule. Need a one-time service or a recurring maintenance plan? YardCare adapts to your needs with flexibility and efficiency.',
     icon: heartIcon,
   },
   {
     heading: 'Transparent Communication',
     text:
-      "We believe in transparent communication. At YardCare Pro, you'll always be in the loop. Receive updates, recommendations, and insights on your yard care journey, fostering a partnership built on trust.",
+      "We believe in transparent communication. At YardCare, you'll always be in the loop. Receive updates, recommendations, and insights on your yard care journey, fostering a partnership built on trust.",
     icon: chattingIcon,
   },
 ];
