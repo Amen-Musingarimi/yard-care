@@ -79,3 +79,10 @@
   font-size: 0.9rem;
   padding: 0;
 }
+
+@media only screen and (max-width: 1024px) {
+  .testimonialsContainer {
+    width: 100%;
+    padding: 4rem 2rem;
+  }
+}
