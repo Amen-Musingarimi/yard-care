@@ -7,7 +7,7 @@
 }
 
 .footer-container {
-  padding: 4rem 2rem;
+  padding: 4rem 2rem 0 2rem;
   background-color: #097969;
 }
 
@@ -17,13 +17,15 @@
   justify-content: space-around;
   align-items: flex-start;
   gap: 4rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px dotted #9acd32;
 }
 
 .company-info {
   gap: 1rem;
 }
 
-.company-name {
+.footerCompany-name {
   color: #9acd32;
   font-size: 2rem;
   font-family: 'Tangerine', cursive;
@@ -80,4 +82,21 @@
 .message-btn:hover {
   background-color: #c3e977;
   cursor: pointer;
+}
+
+.copyrights-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.copyrights-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.2rem;
+  font-size: 0.85rem;
+  color: #fff;
 }

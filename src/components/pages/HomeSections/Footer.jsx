@@ -1,20 +1,23 @@
 import React from 'react';
 import '../../styles/Footer.css';
+import FooterSocials from './FooterSocials';
 import { Link } from 'react-router-dom';
 import { MdOutlinePhone, MdOutlineEmail } from 'react-icons/md';
+import { FaRegCopyright } from 'react-icons/fa';
 
 const Footer = () => {
   return (
     <footer className="footer-container">
       <div className="links-container">
         <div className="company-info">
-          <h4 className="company-name">Yard Care</h4>
+          <h4 className="footerCompany-name">Yard Care</h4>
           <p className="company-pitch">
             We specialize in transforming ordinary yards into stunning retreats,
             offering simplicity, elegance, and a touch of beauty. Let your
             backyard become a masterpiece of cleanliness and tranquility with
             our dedicated services
           </p>
+          <FooterSocials />
         </div>
         <div className="important-links">
           <h4 className="container-heading">Important Links</h4>
@@ -50,7 +53,11 @@ const Footer = () => {
         </div>
       </div>
       <div className="copyrights-container">
-        <p className="copyrights-text"></p>
+        <p className="copyrights-text">
+          <FaRegCopyright />
+          Copyright 2023 YardCare, All Rights Reserved
+        </p>
+        <FooterSocials />
       </div>
     </footer>
   );

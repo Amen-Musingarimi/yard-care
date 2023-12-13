@@ -1,0 +1,11 @@
+.socials-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.socials-container a {
+  text-decoration: none;
+  color: #fff;
+}
