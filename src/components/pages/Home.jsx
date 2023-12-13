@@ -1,5 +1,6 @@
 import React from 'react';
 import WhyUs from './HomeSections/WhyUs';
+import Stats from './HomeSections/Stats';
 import { Link } from 'react-router-dom';
 import homeDark from '../images/home-dark.png';
 
@@ -38,6 +39,7 @@ const Home = () => {
         <p className="home-service">Hardscape Cleaning</p>
       </div>
       <WhyUs />
+      <Stats />
     </div>
   );
 };

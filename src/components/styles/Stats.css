@@ -1,0 +1,33 @@
+.yard-states-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #097969;
+  padding: 4rem 2rem;
+  color: #fff;
+}
+
+.yard-state {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.state-number {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.state-description {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.state-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  color: #fff;
+}
