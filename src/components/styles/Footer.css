@@ -1,0 +1,83 @@
+.footer-container,
+.company-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.footer-container {
+  padding: 4rem 2rem;
+  background-color: #097969;
+}
+
+.links-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 4rem;
+}
+
+.company-info {
+  gap: 1rem;
+}
+
+.company-name {
+  color: #9acd32;
+  font-size: 2rem;
+  font-family: 'Tangerine', cursive;
+  font-weight: 600;
+}
+
+.important-links,
+.links {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.important-links {
+  gap: 1.8rem;
+}
+
+.company-pitch,
+.link {
+  font-size: 0.85rem;
+  line-height: 1.3rem;
+  color: #fff;
+}
+
+.container-heading {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #2b2a2a;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.flex-link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.message-btn {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 500;
+  background-color: #9acd32;
+  border: none;
+  border-radius: 4px;
+  padding: 0.8rem 1.6rem;
+}
+
+.message-btn:hover {
+  background-color: #c3e977;
+  cursor: pointer;
+}
