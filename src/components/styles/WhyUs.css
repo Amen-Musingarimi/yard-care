@@ -83,6 +83,10 @@
     height: 24rem;
     border: 1px solid #097969;
   }
+
+  .reason-text {
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (max-width: 767px) {
