@@ -32,6 +32,20 @@ const About = () => {
           </div>
         ))}
       </div>
+      <p className="section-support-text">
+        <span className="bold-text">
+          On the contrary, we stand firm against the neglect of outdoor spaces,
+        </span>
+        {''} denouncing the oversight that leaves yards untended. We disapprove
+        of those who, captivated by fleeting pleasures, fail to foresee the
+        inevitable distress that befalls a neglected landscape. Just as blame
+        falls upon those who shirk their duty, we believe that a well-tended
+        yard is a testament to a commitment that transcends the avoidance of
+        toil and pain,{' '}
+        <span className="bold-text">
+          embracing the enduring beauty of nature.
+        </span>
+      </p>
     </div>
   );
 };
