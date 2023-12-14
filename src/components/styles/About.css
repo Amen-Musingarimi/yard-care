@@ -89,7 +89,8 @@
 }
 
 .aboutWhy-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   justify-content: space-between;
   align-items: flex-start;
   gap: 4rem;
@@ -186,5 +187,34 @@
 
   .intro-text {
     text-align: center;
+  }
+
+  .about-data-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .about-item {
+    align-items: center;
+  }
+
+  .about-item-heading,
+  .about-item-description,
+  .section-support-text {
+    text-align: center;
+  }
+
+  .aboutWhy-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .aboutWhy-item {
+    height: 20rem;
   }
 }
