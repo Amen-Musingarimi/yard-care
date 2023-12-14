@@ -2,6 +2,7 @@ import React from 'react';
 import '../styles/About.css';
 import lawnmower from '../images/lawnmower.jpg';
 import aboutContent from '../helpers/aboutContent';
+import yardCareFeatures from '../helpers/yardCareFeatures';
 
 const About = () => {
   return (
@@ -25,8 +26,8 @@ const About = () => {
         </div>
       </div>
       <div className="about-data-container">
-        {aboutContent.map((about) => (
-          <div className="about-item">
+        {aboutContent.map((about, index) => (
+          <div key={index} className="about-item">
             <h4 className="about-item-heading">{about.heading}</h4>
             <p className="about-item-description">{about.content}</p>
           </div>
@@ -46,6 +47,16 @@ const About = () => {
           embracing the enduring beauty of nature.
         </span>
       </p>
+      <div className="aboutWhy-container">
+        {yardCareFeatures.map((item, index) => (
+          <div key={index} className="aboutWhy-item">
+            <img className="aboutWhy-icon" src={item.icon} alt="Item Icon" />
+            <h4 className="aboutWhy-heading">{item.title}</h4>
+            <span className="item-border"></span>
+            <p className="aboutWhy-description">{item.description}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
