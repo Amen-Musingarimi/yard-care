@@ -53,4 +53,20 @@
 }
 
 @media only screen and (max-width: 1024px) {
+  .intro-container {
+    gap: 2rem;
+  }
+
+  .intro-text-container {
+    gap: 1rem;
+  }
+
+  .intro-image {
+    width: 50%;
+    height: 30rem;
+  }
+
+  .intro-heading {
+    line-height: 2rem;
+  }
 }
