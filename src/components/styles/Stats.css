@@ -1,0 +1,66 @@
+.yard-states-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #097969;
+  padding: 4rem 2rem;
+  color: #fff;
+  width: 100%;
+}
+
+.yard-state {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+
+.state-number {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.state-description {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.state-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  color: #fff;
+}
+
+@media only screen and (max-width: 1024px) {
+  .yard-states-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+
+  .state-number {
+    font-size: 1.4rem;
+  }
+
+  .state-description {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .yard-states-container {
+    gap: 4rem;
+  }
+
+  .state-number {
+    font-size: 1.2rem;
+  }
+
+  .state-description {
+    font-size: 0.8rem;
+  }
+}

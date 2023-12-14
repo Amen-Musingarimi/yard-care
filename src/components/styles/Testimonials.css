@@ -1,0 +1,88 @@
+.testimonialsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 6rem 4rem;
+  gap: 4rem;
+  width: 80%;
+}
+
+.heading-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 0.8rem;
+}
+
+.sectionHeading {
+  color: #097969;
+  text-align: center;
+}
+
+.dif-text {
+  color: #575555;
+}
+
+.quoteContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.quote-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+  font-size: 2rem;
+  color: #575555;
+}
+
+.quote {
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.7rem;
+  text-align: center;
+}
+
+.customer-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.customer-image {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+
+.customer-name {
+  font-size: 0.8rem;
+  color: #575555;
+  text-transform: uppercase;
+  padding: 0;
+}
+
+.customer-location {
+  color: #097969;
+  font-weight: 500;
+  font-size: 0.9rem;
+  padding: 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .testimonialsContainer {
+    width: 100%;
+    padding: 4rem 2rem;
+  }
+}

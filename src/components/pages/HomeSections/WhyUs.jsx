@@ -10,7 +10,7 @@ const WhyUs = () => {
           Transform Your Outdoor Space with YardCare
         </h2>
         <p className="supporting-text">
-          Embrace the beauty of your outdoor haven with YardCare Pro, where
+          Embrace the beauty of your outdoor haven with YardCare, where
           exceptional service meets pristine landscapes. Discover why we stand
           out in the yard care industry:
         </p>
