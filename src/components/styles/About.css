@@ -6,7 +6,8 @@
 }
 
 .about-container,
-.intro-text-container {
+.intro-text-container,
+.about-item {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -50,6 +51,31 @@
   font-size: 1rem;
   font-weight: 500;
   line-height: 1.7rem;
+}
+
+.about-data-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+}
+
+.about-item {
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.about-item-heading {
+  color: #097969;
+  font-size: 600;
+  font-size: 1.1rem;
+}
+
+.about-item-description {
+  color: #575555;
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1.4rem;
 }
 
 @media only screen and (max-width: 1024px) {

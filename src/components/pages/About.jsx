@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/About.css';
 import lawnmower from '../images/lawnmower.jpg';
+import aboutContent from '../helpers/aboutContent';
 
 const About = () => {
   return (
@@ -22,6 +23,14 @@ const About = () => {
             not only captivate the eye but also nurture the soul.
           </p>
         </div>
+      </div>
+      <div className="about-data-container">
+        {aboutContent.map((about) => (
+          <div className="about-item">
+            <h4 className="about-item-heading">{about.heading}</h4>
+            <p className="about-item-description">{about.content}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
