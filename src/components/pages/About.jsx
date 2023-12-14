@@ -8,16 +8,18 @@ const About = () => {
       <div className="intro-container">
         <img src={lawnmower} alt="lawn-mower" className="intro-image" />
         <div className="intro-text-container">
-          <h4 className="intro-heading">
+          <h2 className="intro-heading">
             We are no. 1 yard care service provider company in Zimbabwe
-          </h4>
+          </h2>
           <p className="intro-text">
-            As a leading yard care service provider, we take pride in elevating
-            your outdoor experience to new heights. Our commitment to
-            excellence, sustainability, and innovation sets us apart, ensuring
-            that your yard becomes a masterpiece of cleanliness and beauty. Join
-            us on this journey to create outdoor spaces that not only captivate
-            the eye but also nurture the soul.
+            Welcome to <span className="company-name">Yard Care</span>, where we
+            redefine outdoor living with a passion for transforming yards into
+            stunning retreats. As a leading yard care service provider, we take
+            pride in elevating your outdoor experience to new heights. Our
+            commitment to excellence, sustainability, and innovation sets us
+            apart, ensuring that your yard becomes a masterpiece of cleanliness
+            and beauty. Join us on this journey to create outdoor spaces that
+            not only captivate the eye but also nurture the soul.
           </p>
         </div>
       </div>
