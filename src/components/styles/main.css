@@ -48,6 +48,7 @@ header h3 {
   width: max-content;
   font-weight: 700;
   font-size: 1.8rem;
+  color: #9acd32;
 }
 
 nav a {
@@ -114,7 +115,7 @@ header .nav-btn {
 }
 
 .company-name {
-  color: var(--mainColorLight);
+  color: #9acd32;
   font-weight: 600;
 }
 
