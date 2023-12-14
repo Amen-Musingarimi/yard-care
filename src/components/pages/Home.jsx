@@ -2,7 +2,6 @@ import React from 'react';
 import WhyUs from './HomeSections/WhyUs';
 import Stats from './HomeSections/Stats';
 import Testimonials from './HomeSections/Testimonials';
-import Footer from './HomeSections/Footer';
 import { Link } from 'react-router-dom';
 import homeDark from '../images/home-dark.png';
 
@@ -43,7 +42,6 @@ const Home = () => {
       <WhyUs />
       <Stats />
       <Testimonials />
-      <Footer />
     </div>
   );
 };

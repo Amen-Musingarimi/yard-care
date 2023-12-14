@@ -6,59 +6,215 @@
 }
 
 .about-container,
-.inception-container {
+.intro-text-container,
+.about-item,
+.aboutWhy-item {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 }
 
 .about-container {
+  align-items: center;
+  gap: 4rem;
+  padding: 4rem 3rem;
+  background-color: var(--mainColor);
+  width: 100%;
+}
+
+.intro-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+  width: 100%;
+}
+
+.intro-text-container {
+  align-items: flex-start;
   gap: 2rem;
-  padding: 2rem 4rem;
-  background-color: #ffffffdc;
-  opacity: 0.9;
 }
 
-.about-page-heading {
-  text-align: center;
-  color: var(--textColor);
-  margin-top: 2rem;
-  font-size: 1.4rem;
-  font-weight: 700;
+.intro-image {
+  width: 50%;
+  border-radius: 4px;
 }
 
-.about-section-heading {
-  color: var(--mainColorLight);
-  font-size: 1rem;
+.intro-heading {
+  color: #097969;
+  line-height: 2.4rem;
   font-weight: 600;
-  margin-bottom: 1rem;
 }
 
-.about-section-description {
+.intro-text,
+.section-support-text {
+  color: #575555;
   font-size: 0.9rem;
   font-weight: 500;
-  line-height: 1.5rem;
-  margin-bottom: 0.5rem;
+  line-height: 1.7rem;
 }
 
-.dotted-border-container {
-  border: 1px dotted var(--textColor);
-  width: 20%;
-  margin-bottom: 1rem;
+.about-data-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+}
+
+.about-item {
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.about-item-heading,
+.aboutWhy-heading {
+  color: #097969;
+  font-weight: 600;
+}
+
+.about-item-heading {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+
+.about-item-description {
+  color: #575555;
+  font-size: 0.9rem;
+  font-weight: 500;
+  line-height: 1.4rem;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.aboutWhy-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+}
+
+.aboutWhy-item {
+  align-items: center;
+  gap: 1rem;
+  border: 1px solid #097969;
+  box-shadow: 6px 6px 0px 0px rgb(9, 121, 105, 1);
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  height: 20rem;
+}
+
+.aboutWhy-icon {
+  height: 5rem;
+  width: 5rem;
+}
+
+.aboutWhy-heading {
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.item-border {
+  border-bottom: 1px solid #097969;
+  width: 4rem;
+}
+
+.aboutWhy-description {
+  font-size: 0.8rem;
+  color: #575555;
+  font-weight: 500;
+  line-height: 1.4rem;
+  text-align: center;
 }
 
 @media only screen and (max-width: 1024px) {
-  .about-container {
+  .intro-container {
     gap: 2rem;
+  }
+
+  .intro-text-container {
+    gap: 1rem;
+  }
+
+  .intro-image {
+    width: 50%;
+    height: 30rem;
+  }
+
+  .intro-heading {
+    line-height: 2rem;
+  }
+
+  .about-data-container,
+  .aboutWhy-container {
+    gap: 2rem;
+  }
+
+  .aboutWhy-item {
+    align-items: center;
+    gap: 1rem;
+    border: 1px solid #097969;
+    box-shadow: 6px 6px 0px 0px rgb(9, 121, 105, 1);
+    border-radius: 10px;
+    padding: 1rem;
+    height: 26rem;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .about-container {
     padding: 2rem;
-    opacity: 1;
   }
 
-  .about-page-heading {
-    margin-top: 0;
-    text-align: start;
+  .intro-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
   }
 
-  .dotted-border-container {
+  .intro-image {
     width: 100%;
+    height: 15rem;
+  }
+
+  .intro-heading {
+    text-align: center;
+  }
+
+  .intro-text {
+    text-align: center;
+  }
+
+  .about-data-container {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .about-item {
+    align-items: center;
+  }
+
+  .about-item-heading,
+  .about-item-description,
+  .section-support-text {
+    text-align: center;
+  }
+
+  .aboutWhy-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .aboutWhy-item {
+    height: 20rem;
   }
 }
