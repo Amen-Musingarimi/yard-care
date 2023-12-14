@@ -5,6 +5,7 @@ import Home from './components/pages/Home';
 import About from './components/pages/About';
 import ServicesList from './components/pages/ServicesList';
 import MultiStepForm from './components/pages/ServiceForms/MultiStepForm';
+import Footer from './components/pages/HomeSections/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/services" index element={<ServicesList />} />
         <Route path="/book" index element={<MultiStepForm />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
