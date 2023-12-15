@@ -13,8 +13,8 @@ const StepFour = ({ formData, prevStep, handleChange, handleSubmit }) => {
     <div className="step-div">
       <div className="form-container">
         <p className="step-description">
-          When would be the most suitable time for us to provide the service
-          you've selected? Please advise.
+          Please provide us with any additional information or any other details
+          that you believe would make our work easier. Please advise.
         </p>
         <div className="dotted-border-container"></div>
         <span className="step-heading">Step 4 of 4</span>
